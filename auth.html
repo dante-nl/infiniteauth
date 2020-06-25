@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Authenticat with ∞</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <style>
+        body {
+            background: white;
+            font-family: system-ui;
+            color: black
+        }
+
+        /* Light Mode */
+        @media (prefers-color-scheme: dark) {
+            body {
+                background-color: #333;
+                color: #fff
+            }
+
+            /* Dark Mode */
+        }
+    </style>
+</head>
+<body>
+
+<h1 id="name">Hello</p>
+        
+<script>
+const queryString = new URLSearchParams(window.location.search);
+const name = queryString.get('name');
+document.getElementById('name').innerHTML = `Hello ${name}`
+
+</script>
+</body>
+</html>
